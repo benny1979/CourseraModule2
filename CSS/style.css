@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .SectionHeader {
+    float: right;
+    clear: both;
+    width: 33%;
+    border-style: solid;
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 125%;
+  }
+  
+  p {
+    clear: both;
+    padding: 10px;
+  }
+  
+  #Header1 {
+    background-color: pink;
+  }
+  
+  #Header2 {
+    background-color: red;
+  
+  }
+  
+  #Header3 {
+    background-color: blue;
+  }
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    h1 {
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 20px;
+  }
+  
+    .col-lg-4 {
+      float: left;
+      border: 1px solid black;
+      background-color: grey;
+      color: black; 
+      width: calc(33.33% - 40px);
+      margin:20px
+    }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 10px;
+  }
+    .col-md-6, .col-md-12 {
+      float: left;
+      border: 1px solid black;
+      background-color: grey;
+      color: black;
+    }
+      .col-md-6 {
+      width: calc(50% - 40px);
+      margin: 20px;
+    }
+     .col-md-12 {
+      width: calc(100% - 40px);
+      margin:20px;
+    }
+  }
+  
+  /********** Small devices only **********/
+  @media (max-width: 767px) {
+    h1 {
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 0px;
+    }
+    .col-sm-12 {
+      float: left;
+      border: 1px solid black;
+      background-color: grey;
+      color: black;
+      width: calc(100% - 40px);
+      margin: 20px;
+    }
+  }
+
+  
